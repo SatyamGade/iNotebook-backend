@@ -9,7 +9,7 @@ const authRoutes = require("./routes/authRoutes");
 const noteRoutes = require("./routes/noteRoutes");
 
  const corsOptions = {
-     origin: "https://i-notebook-frontend-six.vercel.app/",
+     origin: ["https://i-notebook-frontend-six.vercel.app/"],
      methods: ["GET, POST, PUT, DELETE"],
      credentials: true
  }
