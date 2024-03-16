@@ -8,13 +8,13 @@ const errorMiddleware = require("./middlewares/errorMiddleware");
 const authRoutes = require("./routes/authRoutes");
 const noteRoutes = require("./routes/noteRoutes");
 
-// const corsOptions = {
-//     origin: "http://localhost:5174",
-//     methods: "GET, POST, PUT, DELETE, PATCH, OPTIONS",
-//     credentials: true
-// }
+ const corsOptions = {
+     origin: "https://i-notebook-frontend-six.vercel.app/",
+     methods: "GET, POST, PUT, DELETE, PATCH, OPTIONS",
+     credentials: true
+ }
 
-app.use(cors());
+app.use(cors(corsOptions));
 
 app.use(express.json());
 app.use(errorMiddleware);
