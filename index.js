@@ -10,7 +10,7 @@ const noteRoutes = require("./routes/noteRoutes");
 
  const corsOptions = {
      origin: "https://i-notebook-frontend-six.vercel.app/",
-     methods: "GET, POST, PUT, DELETE, PATCH, OPTIONS",
+     methods: ["GET, POST, PUT, DELETE"],
      credentials: true
  }
 
